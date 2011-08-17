@@ -2,6 +2,8 @@ require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 
 describe "ApiTestGem" do
   before(:each) do
+    Dir.chdir("/Users/ds/projects/ave/tavex2/rails")
+    puts Dir.getwd
     api_test('product', 'update')
   end
   it "gets the right url" do
@@ -16,6 +18,5 @@ describe "ApiTestGem" do
   it "returns the result of the curl request" do
     @result[:result].should_not be_nil
     @result[:result].is_a?(String).should be true 
-    puts Dir.pwd
   end
 end
