@@ -22,7 +22,7 @@ Jeweler::Tasks.new do |gem|
   gem.email = "jaqui.wilde@web.de"
   gem.authors = ["Jaqueline Wilde"]
   # dependencies defined in Gemfile
-  gem.executables=['auth_api_test']
+  gem.executables=['auth_api_test.sh']
 end
 Jeweler::RubygemsDotOrgTasks.new
 
