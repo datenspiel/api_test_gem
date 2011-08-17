@@ -5,13 +5,15 @@
 
 Gem::Specification.new do |s|
   s.name = %q{api_test_gem}
-  s.version = "0.1.2"
+  s.version = "0.1.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Jaqueline Wilde"]
   s.date = %q{2011-08-17}
+  s.default_executable = %q{auth_api_test.sh}
   s.description = %q{}
   s.email = %q{jaqui.wilde@web.de}
+  s.executables = ["auth_api_test.sh"]
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.rdoc"
@@ -26,9 +28,9 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "api_test_gem.gemspec",
+    "bin/auth_api_test.sh",
     "lib/api_test.sh",
     "lib/api_test_gem.rb",
-    "lib/auth_api_test.sh",
     "spec/api_test_gem_spec.rb",
     "spec/spec_helper.rb"
   ]
