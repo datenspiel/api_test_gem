@@ -5,15 +5,15 @@
 
 Gem::Specification.new do |s|
   s.name = %q{api_test_gem}
-  s.version = "0.1.3"
+  s.version = "0.1.4"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Jaqueline Wilde"]
   s.date = %q{2011-08-17}
-  s.default_executable = %q{auth_api_test.sh}
+  s.default_executable = %q{auth_api_test}
   s.description = %q{}
   s.email = %q{jaqui.wilde@web.de}
-  s.executables = ["auth_api_test.sh"]
+  s.executables = ["auth_api_test"]
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.rdoc"
