@@ -17,7 +17,7 @@ Jeweler::Tasks.new do |gem|
   gem.name = "api_test_gem"
   gem.homepage = "http://github.com/jwilde/api_test_gem"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
+  gem.summary = %Q{test api calls using curl}
   gem.description = %Q{TODO: longer description of your gem}
   gem.email = "jaqui.wilde@web.de"
   gem.authors = ["Jaqueline Wilde"]
