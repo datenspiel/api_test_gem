@@ -1,6 +1,6 @@
 = api_test_gem
 
-Description goes here.
+test API calls using curl
 
 == Contributing to api_test_gem
  

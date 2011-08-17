@@ -1,7 +1,21 @@
 require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 
 describe "ApiTestGem" do
-  it "fails" do
-    fail "hey buddy, you should probably rename this file and start specing for real"
+  before(:each) do
+    api_test('product', 'update')
+  end
+  it "gets the right url" do
+    @result[:curl].include?("/products/3").should be true
+  end
+  it "gets the infos from api_test_config.yml" do
+    @result[:curl].include?('"identifier":"Produkt"').should be true
+    @result[:curl].include?('"info_short":"short product info"').should be true
+    @result[:curl].include?('"minimum_price":12.5').should be true
+    @result[:curl].include?('"calc_type_id":1').should be true
+  end
+  it "returns the result of the curl request" do
+    @result[:result].should_not be_nil
+    @result[:result].is_a?(String).should be true 
+    puts Dir.pwd
   end
 end
