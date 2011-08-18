@@ -21,6 +21,6 @@ curl -H 'Accept: text/javascript' -H 'Content-Type: application/json' -w '\nHTTP
 -X $METHOD \
 -d "$XML" \
 -u "$AUTH" \
-"$DEST"
+"$DEST" -b $pwd/cookie_for_auth
 
 exit 0
