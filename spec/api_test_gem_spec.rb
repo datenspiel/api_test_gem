@@ -19,4 +19,7 @@ describe "ApiTestGem" do
     @result[:result].should_not be_nil
     @result[:result].is_a?(String).should be true 
   end
+  it "could authenticate if required" do
+    pending
+  end
 end

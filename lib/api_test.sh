@@ -13,6 +13,7 @@ echo $DEST
 if [ $# -eq 0 ]; then
         echo "usage: ./`basename $0` HTTP-METHOD DESTINATION_URI [XML]"
         echo "example: ./`basename $0` POST "/accounts" \"<account><name>ed</name><email>ed@ed.com</email></account>\""
+		echo $pwd
         exit 1
 fi
 
