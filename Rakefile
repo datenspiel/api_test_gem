@@ -18,7 +18,7 @@ Jeweler::Tasks.new do |gem|
   gem.homepage = "http://github.com/jwilde/api_test_gem"
   gem.license = "MIT"
   gem.summary = %Q{test api calls using curl}
-  gem.description = %Q{}
+  gem.description = %Q{This test api calls using curl. If necessary, authenticate before testing, with cookie_for_auth.}
   gem.email = "jaqui.wilde@web.de"
   gem.authors = ["Jaqueline Wilde"]
   # dependencies defined in Gemfile
