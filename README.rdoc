@@ -3,11 +3,11 @@
 test API calls with json response using curl
 
 before use: (all in working directory)
- - write a yml for config named api_test_config.yml 
- - if necessary login with cookie named cookie_for_auth:
+ 1. write a yml for config named api_test_config.yml 
+ 2. if necessary login with cookie named cookie_for_auth:
 	example: 
-		curl -H 'Content-Type: application/json' -H 'Accept: application/json' -X POST http://localhost:3000/users/sign_in \
-		  	-d "{'user' : { 'email' : 'test@example.com', 'password' : 'password'}}" \
+		$curl -H 'Content-Type: application/json' -H 'Accept: application/json' -X POST http://localhost:3000/users/sign_in 
+		  	-d "{'user' : { 'email' : 'test@example.com', 'password' : 'password'}}" 
 		  	-c cookie_for_auth
 
 == Contributing to api_test_gem
