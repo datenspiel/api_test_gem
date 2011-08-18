@@ -3,7 +3,7 @@ require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 describe "ApiTestGem" do
   before(:each) do
     Dir.chdir("/Users/ds/projects/ave/tavex2/rails")
-    puts Dir.getwd
+    #puts Dir.getwd
     api_test('product', 'update')
   end
   it "gets the right url" do
